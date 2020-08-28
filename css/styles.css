@@ -11,6 +11,14 @@ hr{
   border: 2px solid black;
 }
 
+.question{
+  font-weight: bold;
+}
+
+#result {
+  display: none;
+}
+
 table, td{
   border: 2px solid black;
   padding: 0 10px 0 10px;

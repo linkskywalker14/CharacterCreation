@@ -11,37 +11,125 @@
 <body>
   <h1>D&D Character Generator</h1>
   <hr />
-  <div class="row">
-    <div class="col-4"></div>
-    <div class="col-4">
-      <table>
-        <tr>
-          <td>STR</td>
-          <td>10</td>
-        </tr>
-        <tr>
-          <td>CON</td>
-          <td>10</td>
-        </tr>
-        <tr>
-          <td>DEX</td>
-          <td>10</td>
-        </tr>
-        <tr>
-          <td>INT</td>
-          <td>10</td>
-        </tr>
-        <tr>
-          <td>WIS</td>
-          <td>10</td>
-        </tr>
-        <tr>
-          <td>CHA</td>
-          <td>10</td>
-        </tr>
-      </table>
+  <div class="container">
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-2">
+        <div class="radio">
+          <label>
+            <p class="question">You are a...</p>
+            <input type="radio" name="operator" value="add" checked>
+            Human <br />
+            <input type="radio" name="operator" value="add" checked>
+            Elf <br />
+            <input type="radio" name="operator" value="add" checked>
+            Dwarf <br />
+            <input type="radio" name="operator" value="add" checked>
+            Orc <br />
+            <input type="radio" name="operator" value="add" checked>
+            Goblin <br />
+            <input type="radio" name="operator" value="add" checked>
+            Kobold <br />
+          </label>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="radio">
+          <label>
+            <p class="question">Raised in a...</p>
+            <input type="radio" name="operator" value="add" checked>
+            Dark cave <br />
+            <input type="radio" name="operator" value="add" checked>
+            Bustling city <br />
+            <input type="radio" name="operator" value="add" checked>
+            Goatherd's hut <br />
+            <input type="radio" name="operator" value="add" checked>
+            Fruitful valley <br />
+            <input type="radio" name="operator" value="add" checked>
+            Wizard's tower <br />
+            <input type="radio" name="operator" value="add" checked>
+            Slave galley <br />
+          </label>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="radio">
+          <label>
+            <p class="question">You work as a...</p>
+            <input type="radio" name="operator" value="add" checked>
+            Soldier <br />
+            <input type="radio" name="operator" value="add" checked>
+            Bandit <br />
+            <input type="radio" name="operator" value="add" checked>
+            Deacon <br />
+            <input type="radio" name="operator" value="add" checked>
+            Engineer <br />
+            <input type="radio" name="operator" value="add" checked>
+            Farmer <br />
+            <input type="radio" name="operator" value="add" checked>
+            Fur Trader <br />
+          </label>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="radio">
+          <label>
+            <p class="question">Your bad habit...</p>
+            <input type="radio" name="operator" value="add" checked>
+            Getting in fights <br />
+            <input type="radio" name="operator" value="add" checked>
+            Sticky fingers <br />
+            <input type="radio" name="operator" value="add" checked>
+            Excessive drugs <br />
+            <input type="radio" name="operator" value="add" checked>
+            Public nudity <br />
+            <input type="radio" name="operator" value="add" checked>
+            Not bathing <br />
+            <input type="radio" name="operator" value="add" checked>
+            Endless debates <br />
+          </label>
+        </div>
+      </div>
+      <div class="col-2"></div>
     </div>
-    <div class="col-4"></div>
+  </div>
+
+  <!--Below are the results, not displayed until after the form above is submitted.-->
+  <div id="result">
+    <div class="container">
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+          <table>
+            <tr>
+              <td>STR</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>CON</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>DEX</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>INT</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>WIS</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>CHA</td>
+              <td>10</td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-3"></div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
