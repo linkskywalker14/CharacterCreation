@@ -1,0 +1,17 @@
+body{
+  background-color: #D6CCA9;
+}
+
+h1{
+  text-align: center;
+}
+
+hr{
+  width: 10%;
+  border: 2px solid black;
+}
+
+table, td{
+  border: 2px solid black;
+  padding: 0 10px 0 10px;
+}
