@@ -1,3 +1,5 @@
+/*General, whole page stuff*/
+
 body{
   background-color: #D6CCA9;
 }
@@ -11,9 +13,20 @@ hr{
   border: 2px solid black;
 }
 
+/*Question Form Stuff*/
+
 .question{
   font-weight: bold;
 }
+
+.btn{
+  border: 2px solid #6C350F;
+  padding: 0 0 5px 0;
+  font-weight: bold;
+  background-color: #895D3F;
+}
+
+/*Displaying the results*/
 
 #result {
   display: none;
