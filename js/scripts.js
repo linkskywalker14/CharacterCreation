@@ -67,16 +67,22 @@ $(document).ready(function() {
 
     if (habit === 'fights'){
       str += 100;
+      $(".class").text("Fighter");
     } else if (habit === 'steals'){
       con += 100;
+      $(".class").text("Thief");
     } else if (habit === 'drugs'){
       dex += 100;
+      $(".class").text("Magic User");
     } else if (habit === 'nudity'){
       int += 100;
+      $(".class").text("Bard");
     } else if (habit === 'dirty'){
       wis += 100;
+      $(".class").text("Ranger");
     } else if (habit === 'debate'){
       cha += 100;
+      $(".class").text("Cleric");
     }
     
     
