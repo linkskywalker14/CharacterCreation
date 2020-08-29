@@ -108,8 +108,13 @@
   <div id="result">
     <div class="container">
       <div class="row">
-        <div class="col-4"></div>
+        <div class="col-3"></div>
         <div class="col-2">
+          <p id="statsColumn">
+            <strong>Class: </strong><span class="class"></span>
+            <br />
+            <strong>Hit Die: </strong><span class="HD"></span>
+          </p>
           <table>
             <tr>
               <td>STR</td>
@@ -136,23 +141,26 @@
               <td><div id="cha"></div></td>
             </tr>
           </table>
-          <br />
-          <p>
-            <strong>Class: </strong><span class="class"></span>
-            <br />
-            <strong>Hit Die: </strong><span class="HD"></span>
-            <br />
-            <strong>Starting Equipment: </strong><span class="gear"></span>
-          </p>
         </div>
         <div class="col-4"><span class="portrait"></span></div>
-        <div class="col-2"></div>
+        <div class="col-3"></div>
       </div>
+    </div>
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-4">
+        <p>
+          <strong>Starting Equipment: </strong><span class="gear"></span>
+        </p>
+      </div>
+      <div class="col-4"></div>
     </div>
     <div class="row">
       <div class="col-5"></div>
       <div class="col-2">
-        <a href id="again" class="btn" src="index.html">Do it again!</a>
+        <p id="again">
+          <a href id="again" class="btn" src="index.html">Do it again!</a>
+        </p>
       </div>
       <div class="col-5"></div>
   </div>
