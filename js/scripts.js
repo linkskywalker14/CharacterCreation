@@ -19,16 +19,22 @@ $(document).ready(function() {
     
     if (creature === 'human'){
       str += 100;
+      $(".portrait").html("<img src='img/human.jpg' />");
     } else if (creature === 'elf'){
       con += 100;
+      $(".portrait").html("<img src='img/elf.jpg' />");
     } else if (creature === 'dwarf'){
       dex += 100;
+      $(".portrait").html("<img src='img/dwarf.jpg' />");
     } else if (creature === 'orc'){
       int += 100;
+      $(".portrait").html("<img src='img/orc.jpg' />");
     } else if (creature === 'goblin'){
       wis += 100;
+      $(".portrait").html("<img src='img/goblin.jpg' />");
     } else if (creature === 'kobold'){
       cha += 100;
+      $(".portrait").html("<img src='img/kobold.jpg' />");
     }
 
     if (upbringing === 'cave'){
@@ -83,6 +89,7 @@ $(document).ready(function() {
     $("#int").text(int);
     $("#wis").text(wis);
     $("#cha").text(cha);
+    $("#CreateCharacter").hide();
     $("#result").show();
 
   });
