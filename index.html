@@ -11,7 +11,8 @@
 <body>
   <h1>D&D Character Generator</h1>
   <hr />
-  <!--Below is the quiz portion of the HTML.-->
+  <!--Below is the quiz portion of the HTML. Not displayed after form is submitted.-->
+
   <form id="CreateCharacter">
     <div class="container">
       <div class="row">
@@ -20,17 +21,17 @@
           <div class="radio">
             <label>
               <p class="question">You are a...</p>
-              <input type="radio" name="creature" value="human">
+              <input type="radio" name="creature" value="human" />
               Human <br />
-              <input type="radio" name="creature" value="elf">
+              <input type="radio" name="creature" value="elf" />
               Elf <br />
-              <input type="radio" name="creature" value="dwarf">
+              <input type="radio" name="creature" value="dwarf" />
               Dwarf <br />
-              <input type="radio" name="creature" value="orc">
+              <input type="radio" name="creature" value="orc" />
               Orc <br />
-              <input type="radio" name="creature" value="goblin">
+              <input type="radio" name="creature" value="goblin" />
               Goblin <br />
-              <input type="radio" name="creature" value="kobold">
+              <input type="radio" name="creature" value="kobold" />
               Kobold <br />
             </label>
           </div>
@@ -39,17 +40,17 @@
           <div class="radio">
             <label>
               <p class="question">Raised in a...</p>
-              <input type="radio" name="upbringing" value="cave">
+              <input type="radio" name="upbringing" value="cave" />
               Dark cave <br />
-              <input type="radio" name="upbringing" value="city">
+              <input type="radio" name="upbringing" value="city" />
               Bustling city <br />
-              <input type="radio" name="upbringing" value="hut">
+              <input type="radio" name="upbringing" value="hut" />
               Goatherd's hut <br />
-              <input type="radio" name="upbringing" value="valley">
+              <input type="radio" name="upbringing" value="valley" />
               Fruitful valley <br />
-              <input type="radio" name="upbringing" value="wizard">
+              <input type="radio" name="upbringing" value="wizard" />
               Wizard's tower <br />
-              <input type="radio" name="upbringing" value="slave">
+              <input type="radio" name="upbringing" value="slave" />
               Slave galley <br />
             </label>
           </div>
@@ -58,17 +59,17 @@
           <div class="radio">
             <label>
               <p class="question">You work as a...</p>
-              <input type="radio" name="job" value="soldier">
+              <input type="radio" name="job" value="soldier" />
               Soldier <br />
-              <input type="radio" name="job" value="bandit">
+              <input type="radio" name="job" value="bandit" />
               Bandit <br />
-              <input type="radio" name="job" value="deacon">
+              <input type="radio" name="job" value="deacon" />
               Deacon <br />
-              <input type="radio" name="job" value="engineer">
+              <input type="radio" name="job" value="engineer" />
               Engineer <br />
-              <input type="radio" name="job" value="farmer">
+              <input type="radio" name="job" value="farmer" />
               Farmer <br />
-              <input type="radio" name="job" value="fur">
+              <input type="radio" name="job" value="fur" />
               Fur Trader <br />
             </label>
           </div>
@@ -77,17 +78,17 @@
           <div class="radio">
             <label>
               <p class="question">Your bad habit...</p>
-              <input type="radio" name="habit" value="fights">
+              <input type="radio" name="habit" value="fights" />
               Getting in fights <br />
-              <input type="radio" name="habit" value="steals">
+              <input type="radio" name="habit" value="steals" />
               Sticky fingers <br />
-              <input type="radio" name="habit" value="drugs">
+              <input type="radio" name="habit" value="drugs" />
               Excessive drugs <br />
-              <input type="radio" name="habit" value="nudity">
+              <input type="radio" name="habit" value="nudity" />
               Public nudity <br />
-              <input type="radio" name="habit" value="dirty">
+              <input type="radio" name="habit" value="dirty" />
               Not bathing <br />
-              <input type="radio" name="habit" value="debate">
+              <input type="radio" name="habit" value="debate" />
               Endless debates <br />
             </label>
           </div>
@@ -104,7 +105,8 @@
     </div>
   </form>
 
-  <!--Below are the results, not displayed until after the form above is submitted.-->
+  <!--Below is the results portion of the HTML. Not displayed until form is submitted.-->
+
   <div id="result">
     <div class="container">
       <div class="row">
@@ -151,27 +153,28 @@
         <div class="col-4"><span class="portrait"></span></div>
         <div class="col-3"></div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-4"></div>
-      <div class="col-4">
-        <p>
-          <strong>Character History: </strong><span class="history"></span>
-        </p>
-        <p>
-          <strong>Starting Equipment: </strong><span class="gear"></span>
-        </p>
+      <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+          <p>
+            <strong>Character History: </strong><span class="history"></span>
+          </p>
+          <p>
+            <strong>Starting Equipment: </strong><span class="gear"></span>
+          </p>
+        </div>
+        <div class="col-4"></div>
       </div>
-      <div class="col-4"></div>
-    </div>
-    <div class="row">
-      <div class="col-5"></div>
-      <div class="col-2">
-        <p id="again">
-          <a href id="again" class="btn" src="index.html">Do it again!</a>
-        </p>
+      <div class="row">
+        <div class="col-5"></div>
+        <div class="col-2">
+          <p id="again">
+            <a href id="again" class="btn" src="index.html">Do it again!</a>
+          </p>
+        </div>
+        <div class="col-5"></div>
       </div>
-      <div class="col-5"></div>
+    </div>
   </div>
 </body>
 </html>

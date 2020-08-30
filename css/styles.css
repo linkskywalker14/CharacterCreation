@@ -1,4 +1,4 @@
-/*General, whole page stuff*/
+/*General styling, displayed both before and after the form is submitted*/
 
 body{
   background-color: #D6CCA9;
@@ -13,7 +13,7 @@ hr{
   border: 2px solid black;
 }
 
-/*Question Form Stuff*/
+/*Question Form styling, only displayed before the form is submitted*/
 
 .question{
   font-weight: bold;
@@ -27,7 +27,7 @@ hr{
   background-color: #895D3F;
 }
 
-/*Displaying the results*/
+/*Character sheet styling, only displayed after the form is sbumitted*/
 
 #result {
   display: none;
