@@ -1,15 +1,35 @@
 function getBaseAbilityScore(){
-  return parseInt(Math.random() * 3 + 4)
+  return parseInt(Math.random() * 3 + 4);
 }
 
 function checkBaseAbilityScore(num){
   if (num > 18){
     num = 18;
   } else if (num < 3){
-    num = 3
+    num = 3;
   }
   return num;
 
+}
+
+function getModifier(num){
+  let mod;
+  if (num === 3){
+    mod = "(-3)";
+  } else if (num > 3 && num <= 5){
+    mod = "(-2)";
+  } else if (num >= 6 && num <= 8){
+    mod = "(-1)";
+  } else if (num >= 9 && num <= 12){
+    mod = "(+0)";
+  } else if (num >= 13 && num <= 15){
+    mod = "(+1)";
+  } else if (num >= 16 && num <= 17){
+    mod = "(+2)";
+  } else if (num === 18){
+    mod = "(+3)";
+  }
+  return mod;
 }
 
 let str = getBaseAbilityScore();
@@ -261,6 +281,13 @@ $(document).ready(function() {
     int = checkBaseAbilityScore(int);
     wis = checkBaseAbilityScore(wis);
     cha = checkBaseAbilityScore(cha);
+
+    let strMod = getModifier(str);
+    let conMod = getModifier(con);
+    let dexMod = getModifier(dex);
+    let intMod = getModifier(int);
+    let wisMod = getModifier(wis);
+    let chaMod = getModifier(cha);
     
 
     //Return all the results.
@@ -272,6 +299,12 @@ $(document).ready(function() {
     $("#int").text(int);
     $("#wis").text(wis);
     $("#cha").text(cha);
+    $("#strMod").text(strMod);
+    $("#conMod").text(conMod);
+    $("#dexMod").text(dexMod);
+    $("#intMod").text(intMod);
+    $("#wisMod").text(wisMod);
+    $("#chaMod").text(chaMod);
     $(".gear").text(gear);
     $(".history").text(history);
     $("#CreateCharacter").hide();
